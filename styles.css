@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: white;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-image: linear-gradient(rgba(29, 29, 29, 0.6), rgba(29, 29, 29, 0.6)), url(./assets/background-pizza.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#insta{
+    
+    width: 80px;
+    align-items: center;
+    position: fixed;
+    right: 0px;
+    top: 15px;
+
+}
+
+#insta-img{
+    width: 40px;
+    
+}
+
+#insta-img:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+#botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+
+}
+
+.btn {
+
+    background-color: orange;
+    padding: 5px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    
+    transform: scale(1.05);
+    opacity: 0.9;
+    transition: 0.5s ease-in-out;
+}
+
+#color-btn{
+    font-weight: bold;
+    color: red;
+    
+}
+.img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+
+#menor {
+
+    height: 195px;
+}
+
+#menu {
+
+
+    display: grid;
+    grid-template-columns: 270px 270px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+#mostrarTotal {
+
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: 2px solid orange;
+
+}
+
+.card {
+    background-color: rgba(29, 29, 29, 0.7);
+    width: 100%;
+    border: 2px solid orange;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+   
+
+
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+
+
+
+}
+
+#insta {
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    text-shadow: 2px 2px 7px white;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #menu {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        margin-top: 40px;
+    }
+
+    #botoes {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        width: 50%;
+        margin: 30px auto 0 auto;
+
+    }
+
+    .btn {
+
+        background-color: orange;
+        padding: 5px;
+        border-radius: 30px;
+        height: 50px;
+
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+    #menu {
+        display: grid;
+        grid-template-columns: 200px;
+    }
+
+
+
+
+}
